@@ -1,0 +1,30 @@
+﻿<robot>
+
+  <!-- ros_control plugin -->
+  <gazebo>
+
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>bar</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+
+    </plugin>
+</gazebo>
+
+
+
+  <!-- Base Link -->
+  <gazebo reference="base_link">
+
+  <material>Gazebo/Red</material>
+  </gazebo>
+
+  <!-- shaft-->
+  <gazebo reference="shaft">
+
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+
+
+
+</robot>
