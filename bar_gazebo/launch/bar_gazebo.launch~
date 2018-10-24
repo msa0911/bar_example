@@ -19,6 +19,9 @@
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
      args="-param robot_description -urdf -model bar -z 0.001"/>
 
-
+ <node pkg="rosserial_python" type="serial_node.py" name="rosserial" output="screen">
+  <param name="port" value="/dev/ttyACM0" />
+  <param name="baud" value="57600" />
+</node>
 
 </launch>
