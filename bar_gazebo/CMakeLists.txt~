@@ -9,7 +9,6 @@ project(bar_gazebo)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   rospy
-  rosserial_arduino
   rosserial_python
 )
 
